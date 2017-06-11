@@ -5,7 +5,6 @@
             <NavbarLink to="/patients" :active="isPatientsPageActive()">Patiënten</NavbarLink>
             <NavbarLink to="/settings" :active="$route.path === '/settings'">Instellingen</NavbarLink>
         </Navbar>
-
         <div class="container">
             <router-view></router-view>
         </div>
