@@ -5,11 +5,6 @@ export default [
         component: require('./components/Home/LandingPageView')
     },
     {
-        path: '/done',
-        name: 'done',
-        component: require('./components/Done')
-    },
-    {
         path: '/patients',
         name: 'patients',
         component: require('components/Patient/PatientsOverview')
