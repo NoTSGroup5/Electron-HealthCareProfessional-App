@@ -10,8 +10,4 @@ export default class HttpOrganisationService {
     getById(id){
         return this.httpService.getById(this.url, id);
     }
-
-    findByName(name){
-        return this.httpService.get(this.url + `?filter={"name" : "${name}"}`);
-    }
 }
