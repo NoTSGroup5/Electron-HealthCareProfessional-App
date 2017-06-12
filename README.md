@@ -10,17 +10,31 @@ This project assumes:
 - You have a secrey key which the government provided
 
 
+1. Update your bash profile with the following information (replace the ID and SECRET with your facebook info)
+```
+export COMPOSER_PROVIDERS='{
+"facebook": {
+    "provider": "facebook",
+    "module": "passport-facebook",
+    "clientID": "ID",
+    "clientSecret": "SECRET",
+    "authPath": "/auth/facebook",
+    "callbackURL": "/auth/facebook/callback",
+    "successRedirect": "http://localhost:9080?done=true"
+    }
+}'
+```
 
-1. Start the authorization rest API
+2. Start the authorization rest API
 ```
 npm run restAuthentication
 ```
 
-2. Start the application
+3. Start the application
 ```
 npm run dev
 ```
 
-3. Provide your BSN and secret key
+4. Provide your BSN and secret key
 
-4. You should now be able to performs operations like viewing medical records which patients gave your organisation permission to.
+5. You should now be able to performs operations like viewing medical records which patients gave your organisation permission to.
